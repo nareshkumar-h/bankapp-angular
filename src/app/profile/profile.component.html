@@ -1,0 +1,28 @@
+<h3>Profile</h3>
+
+<!-- {{loggedInUser | json}} -->
+
+<table class="table table-bordered">
+<tbody>
+<tr>
+    <th>Name </th>
+    <td>{{loggedInUser.name | uppercase}}</td>
+</tr>
+<tr>
+    <th>Email</th>
+    <td>{{loggedInUser.email}}</td>
+</tr>
+<tr>
+    <th>Role</th>
+    <td>{{loggedInUser.role}}</td>
+</tr>
+<tr>
+    <th>Created On</th>
+    <td>{{loggedInUser.createdDate | date}}</td>
+</tr>
+<tr>
+    <th>Active</th>
+    <td>{{loggedInUser.active}}</td>
+</tr>
+</tbody>
+</table>

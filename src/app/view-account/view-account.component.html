@@ -1,0 +1,21 @@
+<h3>View Account</h3>
+
+ <!-- {{loggedInUser | json}}  -->
+
+<table class="table table-bordered">
+<thead>
+    <tr>
+        <th>Account Type</th>
+        <th>Balance(Rs.)</th>
+        <th>Active</th>
+    </tr>
+</thead>
+<tbody>
+<tr><td>{{loggedInUser.accountType}}</td>
+<td>{{loggedInUser.balance}}</td>
+<td>{{loggedInUser.accountActive}}</td>
+
+</tr>
+</tbody>
+
+</table>

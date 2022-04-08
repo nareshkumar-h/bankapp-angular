@@ -1,0 +1,29 @@
+<h3>All Accounts</h3>
+<!-- {{accounts | json}} -->
+<table class="table table-bordered">
+<thead>
+    <tr>
+        <th>Sno</th>
+        <th>Name</th>
+        <th>Account Type</th>
+        <th>Balance(Rs.)</th>
+        <th>Active</th>
+        <th>Actions</th>
+    </tr>
+</thead>
+<tbody>
+<tr *ngFor="let account of accounts;let i=index;">
+    <td>{{i+1}}</td>
+    <td>{{account.name}}</td>
+    <td>{{account.accountType}}</td>
+<td>{{account.balance}}</td>
+<td>{{account.accountActive}}</td>
+<td>
+    <button type="button" (click)="enableAccount(account, i)" >Enable</button> &nbsp;
+    <button type="button" (click)="disableAccount(account, i)" >Disable</button>
+</td>
+
+</tr>
+</tbody>
+
+</table>
